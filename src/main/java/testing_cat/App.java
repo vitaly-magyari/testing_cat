@@ -8,8 +8,6 @@ import cat.CatBuilder;
 import errors.MouseEscapedException;
 import mouse.Mouse;
 
-import java.util.Arrays;
-
 import static java.lang.Double.parseDouble;
 
 public class App {
