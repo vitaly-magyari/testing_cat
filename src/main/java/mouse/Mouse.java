@@ -7,11 +7,13 @@ import lombok.experimental.Accessors;
 @Getter
 public class Mouse {
 
-    public Mouse(double X, double Y) {
+    public Mouse(double X, double Y, double size) {
         this.X = X;
         this.Y = Y;
+        this.size = size;
     }
 
     private double X;
     private double Y;
+    private double size;
 }

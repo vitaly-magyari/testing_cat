@@ -23,6 +23,6 @@ public class Cat {
     }
 
     public boolean catchMouse(Mouse target) {
-        return effectiveRange - range(target.X(), target.Y()) >= 0;
+        return (target.size() > 6 || effectiveRange - range(target.X(), target.Y()) >= 0);
     }
 }

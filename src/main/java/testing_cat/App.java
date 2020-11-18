@@ -22,9 +22,10 @@ public class App {
 
         double mouseX = parseDouble(args[2]);
         double mouseY = parseDouble(args[3]);
+        double mouseSize = parseDouble(args[4]);
 
         Cat cat = new CatBuilder().at(catX, catY).assemble();
-        Mouse mouse = new Mouse(mouseX, mouseY);
+        Mouse mouse = new Mouse(mouseX, mouseY, mouseSize);
 
 
         if (cat.catchMouse(mouse)) {
